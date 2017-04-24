@@ -1,0 +1,101 @@
+.mic-container {
+    max-width: 500px;
+    position: relative;
+}
+
+.mic-ope-box {
+    text-align: justify;
+    margin-top: 20px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+not supported by any browser */
+}
+
+.mic-ope-box span {
+    display: inline-block;
+    width: 15%;
+    border-radius: 3px;
+    background: #50bdf6;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+not supported by any browser */
+}
+
+.mic-ope-box span input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.mic-img-box {
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor: move;
+    -webkit-transition-property: background-size, -webkit-transform;
+    transition-property: background-size, -webkit-transform;
+    transition-property: transform, background-size;
+    transition-property: transform, background-size, -webkit-transform;
+}
+
+@media screen and (min-width:1024px) {
+    .mic-img-box {
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+}
+
+.mic-zzc {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: -300px;
+    left: -300px;
+    margin: 20%;
+    border: 300px solid rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+}
+
+#mic-crop-box img {
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+
+.mic-img-tip{
+    color:#666;
+}
+.mic-img-tip span{
+    color:#eb1478;
+}
