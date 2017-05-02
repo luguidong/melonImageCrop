@@ -26,6 +26,7 @@ not supported by any browser */
     border-radius: 3px;
     background: #50bdf6;
     line-height: 30px;
+    height: 30px;
     color: #fff;
     text-align: center;
     cursor: pointer;

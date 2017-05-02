@@ -13,11 +13,17 @@
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="cache-control" content="max-age=7200" />
     <link rel="stylesheet" href="css/melonImageCrop.css">
+    <!--
     <link rel="stylesheet" href="//at.alicdn.com/t/font_h1twyhokswjhsemi.css">
+    -->
 </head>
 <!--
-mic:melon-img-crop缩写
+@author:Melon
+@date:2017.4.10
+@description:pc+mobile，缩放、剪切、旋转、上传模拟。服务器环境下可以选择加载阿里icon的css文件并去掉按钮上的文字，获得更好体验。mic:melon-img-crop缩写
+
 -->
+
 <body>
     <div class="mic-container">
         <div class="mic-img-box" style="" id="mic-img-main">
@@ -25,15 +31,37 @@ mic:melon-img-crop缩写
         </div>
         <p class="mic-img-tip"><span>*</span>先添加图片，然后选择剪切可以获得预览头像，再选择上传即可</p>
         <div class="mic-ope-box">
-            <span id="mic-rot-left"><i class="iconfont icon-zuoxuanzhuan"></i></span>
-            <span id="mic-rot-right"><i class="iconfont icon-youxuanzhuan"></i></span>
-            <span id="mic-zoom-sma"><i class="iconfont icon-suoxiao"></i></span>
-            <span id="mic-zoom-big"><i class="iconfont icon-fangda"></i></span>
+            <span id="mic-rot-left">
+                左旋
+                <i class="iconfont icon-zuoxuanzhuan"></i>
+            </span>
+            <span id="mic-rot-right">
+                右旋
+                <i class="iconfont icon-youxuanzhuan"></i>
+            </span>
+            <span id="mic-zoom-sma">
+                缩小
+                <i class="iconfont icon-suoxiao"></i>
+            </span>
+            <span id="mic-zoom-big">
+            放大
+                <i class="iconfont icon-fangda"></i>
+                </span>
             <div style="width:100%;display:inline-block;margin:0;height:0;"></div>
-            <span id="mic-crop-btn"><i class="iconfont icon-msnui-cut"></i></span>
-            <span id="mic-up-btn"><i class="iconfont icon-msnui-cloud-upload"></i></span>
-            <span><i class="iconfont icon-zengjia"></i><input type="file" id="upload-file"></span>
+            <span id="mic-crop-btn">
+                剪切
+                <i class="iconfont icon-msnui-cut"></i>
+            </span>
+            <span id="mic-up-btn">
+                上传
+                <i class="iconfont icon-msnui-cloud-upload"></i>
+            </span>
+            <span>
+                选择
+                <i class="iconfont icon-msnui-cloud-upload"></i>
+                <input type="file" id="upload-file"></span>
             <div style="display:inline-block;width:100%;"></div>
+
         </div>
         <div id="mic-crop-box"></div>
     </div>
@@ -52,11 +80,12 @@ mic:melon-img-crop缩写
             zoomRatio: 1.3, //缩小放大的倍率
             rotLeftBtn: '#mic-rot-left',
             rotRightBtn: '#mic-rot-right',
-            imgUpBtn:'#mic-up-btn',
-            imgBoxSize:200//剪切的圆形部分尺寸，切勿超过主框的大小
+            imgUpBtn: '#mic-up-btn',
+            imgBoxSize: 200 //剪切的圆形部分尺寸，切勿超过主框的大小
         });
 
     </script>
+
 </body>
 
 

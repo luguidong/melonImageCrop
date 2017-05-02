@@ -100,7 +100,7 @@
                 //ajax上传图片的bolb
                 upImg: function () {
                     if (param.imgData == 0) {
-                        $('.mic-img-tip').html('<span>*</span>请先上传/剪切图片');
+                        $('.mic-img-tip').html('<span>*</span>请先选择/剪切图片');
                         return false;
                     }
                     $.ajax({
@@ -298,18 +298,22 @@
                 $imgBox.on('mousemove', function (e) {
                     fnTotal.mouseMove(e);
                 });
+                //图片放大
                 $(opts.zoomBigBtn).on('click', function () {
                     fnTotal.zoomBiger($imgBox, opts.zoomRatio);
                 });
+                //图片缩小
                 $(opts.zoomSmaBtn).on('click', function () {
                     fnTotal.zoomSmaller($imgBox, opts.zoomRatio);
                 });
+                //左旋转
                 $(opts.rotLeftBtn).on('click', function () {
                     fnTotal.setImgRotate($imgBox, -90);
                 });
                 $(opts.rotRightBtn).on('click', function () {
                     fnTotal.setImgRotate($imgBox, 90);
                 });
+                //上传图片
                 $(opts.imgUpBtn).on('click', function () {
                     fnTotal.upImg();
                 });
