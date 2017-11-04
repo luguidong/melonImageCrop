@@ -13,7 +13,7 @@
                 rotLeftBtn: '#mic-rot-left', //左旋转按钮
                 rotRightBtn: '#mic-rot-right',
                 imgUpBtn: '#mic-up-btn',
-                touchRatio: 1, //手机端双指缩放系数
+                touchRatio: 1, //手机端双指缩放系数.
                 imgBoxSize: 300 //头像显示范围的尺寸 
             };
             var param = {
