@@ -26,7 +26,7 @@
                 mouseIniY: 0,
                 curImgWidth: 0, //当前背景图宽度
                 curImgHeight: 0,
-                curImgRotate: 0, //当前旋转角度.
+                curImgRotate: 0, //当前旋转角度
                 touchIniX2: 0, //手机端双指触摸放大或缩小时第二个手指的x坐标
                 touchIniY2: 0,
                 imgData: 0
