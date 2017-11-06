@@ -20,7 +20,7 @@
                 mouseFlag: 0, //鼠标状态，1代表按住，0代表放开
                 mainBoxWidth: 0, //主容器宽度
                 mainBoxHeight: 0, //主容器高度
-                backPosX: 0, //背景图位置x坐标
+                backPosX: 0, //背景图位置x坐标.
                 backPosY: 0,
                 mouseIniX: 0, //鼠标点下后的初始x坐标
                 mouseIniY: 0,
